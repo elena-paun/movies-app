@@ -1,0 +1,17 @@
+{
+  "title": "Top Rated Movies",
+  "header": {
+    "poster": "Poster",
+    "rank": "Rank",
+    "title": "Title",
+    "year": "Year",
+    "rating": "IMDb Rating",
+    "crew": "Crew"
+  },
+  "sort": {
+    "ranking": "Ranking",
+    "releaseDate": "Release Date",
+    "votes": "Number of votes"
+  },
+  "search": "Search movies"
+}

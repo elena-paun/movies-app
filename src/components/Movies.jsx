@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 const Movies = () => {
+  const { t } = useTranslation();
   const { currentPage, movies, filteredMovies, perPage, searchTerm } =
     useSelector((state) => state.movieReducer);
 
@@ -17,12 +19,12 @@ const Movies = () => {
       <table className='table-auto'>
         <thead>
           <tr className='text-sm text-gray-400 leading-10 border border-0 border-t-[0.5px] border-gray-800'>
-            <th className='font-light pr-12'>Poster</th>
-            <th className='font-light pr-12'>Rank</th>
-            <th className='font-light pr-12'>Title</th>
-            <th className='font-light pr-12'>Year</th>
-            <th className='font-light pr-12'>IMDb Rating</th>
-            <th className='font-light pr-12'>Crew</th>
+            <th className='font-light pr-12'>{t('header.poster')}</th>
+            <th className='font-light pr-12'>{t('header.rank')}</th>
+            <th className='font-light pr-12'>{t('header.title')}</th>
+            <th className='font-light pr-12'>{t('header.year')}</th>
+            <th className='font-light pr-12'>{t('header.rating')}</th>
+            <th className='font-light pr-12'>{t('header.crew')}</th>
           </tr>
         </thead>
         <tbody>

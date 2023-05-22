@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const Search = ({ searchTerm, handleSearch }) => {
+  const { t } = useTranslation();
   return (
     <div className='w-full relative bg-[rgb(29,30,32)] flex items-center h-12 rounded-md'>
       <svg
@@ -16,7 +19,7 @@ const Search = ({ searchTerm, handleSearch }) => {
       </svg>
       <input
         type='text'
-        placeholder='Search movies'
+        placeholder={t('search')}
         value={searchTerm}
         onChange={handleSearch}
         className='appearance-none bg-[rgb(29,30,32)] border-0 text-docsearch-text-color flex-1

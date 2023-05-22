@@ -1,13 +1,4 @@
-import { useDispatch } from 'react-redux';
-import { reverseMoviesOrder } from '../redux/actions';
-
-const ReverseMovies = () => {
-  const dispatch = useDispatch();
-
-  const handleReverseOrder = () => {
-    dispatch(reverseMoviesOrder());
-  };
-
+const ReverseMovies = ({ handleReverseOrder }) => {
   return (
     <div
       className='flex items-center cursor-pointer'

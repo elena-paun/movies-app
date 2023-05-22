@@ -1,12 +1,14 @@
 import { useSelector } from 'react-redux';
+import moviesList from '../../movies.json';
 
-const Pagination = ({ currentPage, perPage, totalMovies, setPage }) => {
+const Pagination = ({ currentPage, perPage, setPage }) => {
   const pageNumbers = [];
+  const totalMovies = moviesList.data.length;
 
   const { movieReducer } = useSelector((state) => state);
-  const { filteredMovies, searchTerm } = movieReducer;
+  const { filteredMovies } = movieReducer;
   const totalPages = Math.ceil(filteredMovies.length / perPage);
-  console.log({ searchTerm });
+
   let startPage = 1;
   let endPage = totalPages;
 

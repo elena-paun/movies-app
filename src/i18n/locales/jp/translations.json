@@ -1,0 +1,17 @@
+{
+  "title": "最高評価の映画",
+  "header": {
+    "poster": "ポスター",
+    "rank": "ランク",
+    "title": "タイトル",
+    "year": "年",
+    "rating": "IMDb 評価",
+    "crew": "クルー"
+  },
+  "sort": {
+    "ranking": "ランキング",
+    "releaseDate": "発売日",
+    "votes": "投票数"
+  },
+  "search": "映画を検索する"
+}
